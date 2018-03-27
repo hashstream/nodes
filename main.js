@@ -64,5 +64,5 @@ function showPosition(position) {
     var vw = map.getView();
     var pt = proj.transform([position.coords.longitude, position.coords.latitude], 'EPSG:4326', vw.getProjection().getCode());
     vw.setCenter(pt);
-    vw.setZoon(8);
+    vw.setZoom(8);
 }
